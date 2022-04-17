@@ -2,7 +2,12 @@ import React from "react";
 import './SocialLogin.css'
 import {FcGoogle} from "react-icons/fc"
 import {BsGithub} from "react-icons/bs"
+import { useSignInWithGithub, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
 const SocialLogin = () => {
+  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+  const [signInWithGithub, userGit, loadingGit, errorGit] = useSignInWithGithub(auth);
+
   return (
     <div>
       <div className="d-flex align-items-center justify-content-center text-muted">
@@ -11,10 +16,10 @@ const SocialLogin = () => {
         <div style={{ height: "1px" }} className="w-50 bg-dark"></div>
       </div>
       <div>
-          <button  style={{backgroundColor:'#22c55e'}} className="btn s-btn w-50 d-block mx-auto my-3 fw-bold"><FcGoogle style={{width:'30px',height:'30px'}} className="me-2"></FcGoogle> Google Sign In</button>
+          <button onClick={()=>signInWithGoogle()}  style={{backgroundColor:'#22c55e'}} className="btn s-btn w-50 d-block mx-auto my-3 fw-bold"><FcGoogle style={{width:'30px',height:'30px'}} className="me-2"></FcGoogle> Google Sign In</button>
       </div>
       <div>
-          <button  style={{backgroundColor:'#22c55e'}} className="btn s-btn w-50 d-block mx-auto my-3 fw-bold"><BsGithub style={{width:'30px',height:'30px'}} className="me-2"></BsGithub> Github Sign In</button>
+          <button onClick={()=>signInWithGithub()}  style={{backgroundColor:'#22c55e'}} className="btn s-btn w-50 d-block mx-auto my-3 fw-bold"><BsGithub style={{width:'30px',height:'30px'}} className="me-2"></BsGithub> Github Sign In</button>
       </div>
     </div>
   );
