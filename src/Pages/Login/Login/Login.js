@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Button, Form } from "react-bootstrap";
 import {
   useSendPasswordResetEmail,
@@ -11,7 +11,6 @@ import SocialLogin from "../SocialLogin/SocialLogin";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-
 const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
@@ -20,14 +19,26 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
-  let ErrorMessage ;
+  const emailRef = useRef("");
+  const passwordRef = useRef("");
+  let ErrorMessage;
   if (error) {
-    ErrorMessage=<p className="text-danger">{error?.message}</p>
+    ErrorMessage = <p className="text-danger">{error?.message}</p>;
   }
   const handleLogin = (event) => {
-    const email = event.target.email.value;
-    const password = event.target.password.value;
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
     signInWithEmailAndPassword(email, password);
+  };
+  const handleReset = async() => {
+    const email = emailRef.current.value;
+    console.log(email);
+    if (email) {
+      await sendPasswordResetEmail(email);
+      toast("Email sent", { position: toast.POSITION.TOP_CENTER });
+    } else {
+      toast("Please enter your email", { position: toast.POSITION.TOP_CENTER });
+    }
   };
 
   useEffect(() => {
@@ -48,6 +59,7 @@ const Login = () => {
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label className="fw-bold">Email address</Form.Label>
           <Form.Control
+           ref={emailRef}
             name="email"
             type="email"
             placeholder="Enter email"
@@ -61,6 +73,7 @@ const Login = () => {
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label className="fw-bold">Password</Form.Label>
           <Form.Control
+           ref={passwordRef}
             name="password"
             type="password"
             placeholder="Password"
@@ -71,9 +84,7 @@ const Login = () => {
           Login
         </Button>
       </Form>
-      <div style={{height:'20px'}}>
-        {ErrorMessage}
-      </div>
+      <div style={{ height: "20px" }}>{ErrorMessage}</div>
       <div className="d-flex justify-content-between justify-content-end">
         <p className="mt-2">
           New to Immigration Lab?
@@ -82,6 +93,7 @@ const Login = () => {
           </Link>
         </p>
         <span
+          onClick={handleReset}
           role="button"
           className="text-warning text-decoration-underline fw-bold"
         >
