@@ -15,4 +15,10 @@
  * y- FFD523
  * o-FF4C29
  * r-DA0037
+ * https://i.ibb.co/Pr97Zh2/skill.jpg
+https://i.ibb.co/KKJ2WGP/spouse.jpg
+https://i.ibb.co/vPx3SQ9/student.jpg
+https://i.ibb.co/sRF4pXg/vip.jpg
+https://i.ibb.co/GcR5Tfb/visitor.jpg
+https://i.ibb.co/vHT58G7/worker.jpg
  */

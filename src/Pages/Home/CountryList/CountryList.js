@@ -12,10 +12,10 @@ const CountryList = () => {
   return (
     <div className="mt-5">
       <h1
-        style={{ color: "#30475E" }}
-        className="text-center py-3 my-5 fw-bold shadow"
+        style={{ color: "#30475E",fontFamily:'monospace' }}
+        className="text-center text-light py-3 my-5 fw-bold animate-text"
       >
-        Immigration & Visa Services Following Countries
+        Visa Services Following Countries
       </h1>
       <Row xs={1} md={2} lg={3} className="g-4 container mx-auto mt-5">
         <Col>

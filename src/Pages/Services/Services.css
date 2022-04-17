@@ -1,0 +1,13 @@
+.service-title{
+    font-size: 50px !important;
+    font-weight: 900 !important;
+    -webkit-box-shadow: 5px 5px 0px 0px #30475E, 10px 10px 0px 0px #30475E, 15px 15px 0px 0px #DA0037, 20px 20px 0px 0px #fff, 25px 25px 0px 0px #E1EEFF, -4px 3px 27px 12px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 0px 0px #30475E, 10px 10px 0px 0px #30475E, 15px 15px 0px 0px #DA0037, 20px 20px 0px 0px #fff, 25px 25px 0px 0px #30475E, -4px 3px 27px 12px rgba(0,0,0,0);
+    background-image: linear-gradient(
+        -225deg,
+        #30475E 40%,
+        #ff1361 17%,
+        #121212 70%,
+        #F5F5F5 100%
+      );
+}

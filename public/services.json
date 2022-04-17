@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "name": "STUDENT VISAS",
+      "facilities": [
+        "Legal Immigration Success",
+        "Required Documents Support",
+        "Full Application Representation",
+        "Full Application Review",
+        "Document Review"
+      ],
+      "fee": 100,
+      "img": "https://i.ibb.co/vPx3SQ9/student.jpg"
+    },
+    {
+      "id": 2,
+      "name": "SKILLED MIGRATION VISAS",
+      "facilities": [
+        "Legal Immigration Success",
+        "Required Documents Support",
+        "Full Application Representation",
+        "Full Application Review",
+        "Document Review"
+      ],
+      "fee": 300,
+      "img": "https://i.ibb.co/Pr97Zh2/skill.jpg"
+    },
+    {
+      "id": 3,
+      "name": "BUSINESS VISAS",
+      "facilities": [
+        "Legal Immigration Success",
+        "Required Documents Support",
+        "Full Application Representation",
+        "Full Application Review",
+        "Document Review"
+      ],
+      "fee": 500,
+      "img": "https://i.ibb.co/XVbcZBC/room3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "WORKING VISAS",
+      "facilities": [
+        "Legal Immigration Success",
+        "Required Documents Support",
+        "Full Application Representation",
+        "Full Application Review",
+        "Document Review"
+      ],
+      "fee": 200,
+      "img": "https://i.ibb.co/vHT58G7/worker.jpg"
+    },
+    {
+      "id": 5,
+      "name": "TOURIST VISAS",
+      "facilities": [
+        "Legal Immigration Success",
+        "Required Documents Support",
+        "Full Application Representation",
+        "Full Application Review",
+        "Document Review"
+      ],
+      "fee": 300,
+      "img": "https://i.ibb.co/GcR5Tfb/visitor.jpg"
+    },
+    {
+      "id": 6,
+      "name": "VIP VISAS",
+      "facilities": [
+        "Legal Immigration Success",
+        "Required Documents Support",
+        "Full Application Representation",
+        "Full Application Review",
+        "Document Review"
+      ],
+      "fee": 600,
+      "img": "https://i.ibb.co/sRF4pXg/vip.jpg"
+    }
+  ]
+  
