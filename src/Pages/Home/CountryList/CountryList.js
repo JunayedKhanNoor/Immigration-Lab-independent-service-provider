@@ -66,7 +66,6 @@ const CountryList = () => {
             </Card.Body>
           </Card>
         </Col>
-        )
       </Row>
     </div>
   );
