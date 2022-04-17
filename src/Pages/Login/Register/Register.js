@@ -8,8 +8,7 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import Loading from "../../Shared/Loading/Loading";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 const Register = () => {
   const [accept, setAccept] = useState(false);
@@ -38,7 +37,6 @@ const Register = () => {
         setOurError('')
         await createUserWithEmailAndPassword(email,password);
         await updateProfile({ displayName:name});
-        toast("Please enter your email", { position: toast.POSITION.TOP_CENTER });
         navigate("/");
       }
 
@@ -105,7 +103,6 @@ const Register = () => {
         </Link>
       </p>
       <SocialLogin></SocialLogin>
-      <ToastContainer />
     </div>
   );
 };
