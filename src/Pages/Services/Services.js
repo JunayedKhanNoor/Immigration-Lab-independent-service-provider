@@ -10,7 +10,7 @@ const Services = () => {
       .then((data) => setServices(data));
   }, []);
   return (
-    <div>
+    <div id="services">
       <h1
         style={{ backgroundColor: "#F05454", fontFamily: "monospace" }}
         className="text-center text-light   my-5 py-3 service-title"

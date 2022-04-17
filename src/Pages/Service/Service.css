@@ -1,0 +1,17 @@
+.service-cart{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 20px;
+}
+.service-image{
+    border-top-left-radius: 30px;
+}
+.service-cart:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cart-button{
+    border-bottom-right-radius: 20px;
+}
+.cart-button:hover{
+background: #166534 !important;
+color: #fff;
+}

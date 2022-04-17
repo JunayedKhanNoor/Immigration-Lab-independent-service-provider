@@ -1,0 +1,9 @@
+.s-btn:hover {
+  background: #166534 !important;
+  color: #fff;
+}
+@media only screen and (max-width: 480px) {
+  .s-btn {
+    width: 100% !important;
+  }
+}
