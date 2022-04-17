@@ -1,0 +1,6 @@
+.country-card:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1.05) translateX(20px);
+  transition: 0.5s all ease;
+  z-index: 400;
+}
