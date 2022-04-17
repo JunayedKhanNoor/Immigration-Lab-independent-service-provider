@@ -12,8 +12,8 @@ const CountryList = () => {
   return (
     <div className="mt-5">
       <h1
-        style={{ color: "#30475E",fontFamily:'monospace' }}
-        className="text-center text-light py-3 my-5 fw-bold animate-text"
+        style={{ color: "#30475E",fontFamily:'monospace',marginTop:'100px',marginBottom:'100px' }}
+        className="text-center text-light py-3  fw-bold animate-text"
       >
         Visa Services Following Countries
       </h1>

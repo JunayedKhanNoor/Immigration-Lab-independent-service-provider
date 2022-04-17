@@ -12,8 +12,8 @@ const Services = () => {
   return (
     <div id="services">
       <h1
-        style={{ backgroundColor: "#F05454", fontFamily: "monospace" }}
-        className="text-center text-light   my-5 py-3 service-title"
+        style={{ backgroundColor: "#F05454", fontFamily: "monospace",marginTop:'100px',marginBottom:'80px' }}
+        className="text-center text-light  py-3 service-title"
       >
         Our services
       </h1>

@@ -1,9 +1,16 @@
+import { signOut } from "firebase/auth";
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
+import auth from "../../../firebase.init";
 import CustomLink from "../CustomLink/CustomLink";
 
 const Header = () => {
+  const [user, loading,error] = useAuthState(auth);
+  const logOut=()=>{
+    signOut(auth);
+  }
   return (
     <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container className="text-uppercase">
@@ -22,7 +29,12 @@ const Header = () => {
             <Nav.Link  style={{ letterSpacing: "1px" }} className="fs-6 fw-bold mx-1"><CustomLink to='/success-stories'>Success Stories</CustomLink></Nav.Link>
             <Nav.Link  style={{ letterSpacing: "1px" }} className="fs-6 fw-bold mx-1"><CustomLink to='/blogs'>Blogs</CustomLink></Nav.Link>
             <Nav.Link  style={{ letterSpacing: "1px" }} className="fs-6 fw-bold mx-1"><CustomLink to='/about'>About</CustomLink></Nav.Link>
-            <Nav.Link  style={{ letterSpacing: "1px" }} className="fs-6 fw-bold mx-1"><CustomLink to='/login'>Login</CustomLink></Nav.Link>
+            {
+              user?
+              <Nav.Link onClick={logOut} as={Link} to='/' className="text-light fs-6 fw-bold mx-1 ">Sign Out</Nav.Link>
+              :
+              <Nav.Link  style={{ letterSpacing: "1px" }} className="fs-6 fw-bold mx-1"><CustomLink to='/login'>Login</CustomLink></Nav.Link>
+            }
           </Nav>
         </Navbar.Collapse>
       </Container>
