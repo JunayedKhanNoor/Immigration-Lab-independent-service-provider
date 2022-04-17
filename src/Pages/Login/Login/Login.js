@@ -85,7 +85,7 @@ const Login = () => {
         </Button>
       </Form>
       <div style={{ height: "20px" }}>{ErrorMessage}</div>
-      <div className="d-flex justify-content-between justify-content-end">
+      <div className="d-md-flex justify-content-between justify-content-end">
         <p className="mt-2">
           New to Immigration Lab?
           <Link className="ms-2" to="/register">
