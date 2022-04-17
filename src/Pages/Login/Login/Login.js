@@ -22,22 +22,14 @@ const Login = () => {
           <Form.Label className="fw-bold">Password</Form.Label>
           <Form.Control type="password" placeholder="Password" required />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label className="fw-bold">Confirm Password</Form.Label>
-          <Form.Control
-            type="password"
-            placeholder="Confirm Password"
-            required
-          />
-        </Form.Group>
         <Button className="px-4 fw-bold" variant="primary" type="submit">
           Register
         </Button>
       </Form>
       <p className="mt-2">
-        Already have an account?
-        <Link className="ms-2" to="/login">
-          Login
+        New to Immigration Lab?
+        <Link className="ms-2" to="/register">
+          Sign Up
         </Link>
       </p>
       <SocialLogin></SocialLogin>
