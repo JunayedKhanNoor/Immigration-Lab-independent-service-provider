@@ -12,7 +12,6 @@ const Service = ({ service }) => {
     navigate(`/checkout/${id}`);
   }
   return (
-    <div>
       <Col>
         <Card style={{ height: "630px" }} className="text-center service-cart">
           <Card.Img className="service-image" style={{ height: "334px" }} variant="top" src={img} />
@@ -20,15 +19,14 @@ const Service = ({ service }) => {
             <Card.Title className="my-3 fw-bold">{name}</Card.Title>
             <Card.Text>
               {facilities.map((facility) => (
-                <p className="m-0 text-start w-75 mx-auto"><HiCheckCircle style={{width:'30px',height:'20px',color:'#22c55e'}} className="me-1"></HiCheckCircle>{facility}</p>
+                <span key={facility} className="d-block  m-0 text-start w-75 mx-auto"><HiCheckCircle style={{width:'30px',height:'20px',color:'#22c55e'}} className="me-1"></HiCheckCircle>{facility}</span>
               ))}
-              <h6 className="text-start w-75 mx-auto fw-bold fs-4 mt-2"><HiArrowCircleRight style={{width:'30px',height:'30px',paddingBottom:'4px'}} ></HiArrowCircleRight>Our consultancy fee: $ {fee}</h6>
             </Card.Text>
+            <h6 className="text-start w-75 mx-auto fw-bold fs-4 mt-2"><HiArrowCircleRight style={{width:'30px',height:'30px',paddingBottom:'4px'}} ></HiArrowCircleRight>Our consultancy fee: $ {fee}</h6>
           </Card.Body>
           <button onClick={()=>{navigateToCheckOut(id)}} style={{backgroundColor:'#22c55e'}} className="btn w-100 p-2 fs-4-5 fw-bold cart-button"><BsCartCheckFill style={{width:'30px',height:'25px',paddingBottom:'4px'}}></BsCartCheckFill> Buy Service</button>
         </Card>
       </Col>
-    </div>
   );
 };
 

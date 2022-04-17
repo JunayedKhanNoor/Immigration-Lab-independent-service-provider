@@ -5,9 +5,9 @@ const CustomLink = ({ children, to, ...props }) => {
   let resolved = useResolvedPath(to);
   let match = useMatch({ path: resolved.pathname, end: true });
   return (
-    <div>
       <Link
         style={{
+          letterSpacing: "1px",
           color: match ? "#F05454" : "#fff",
           textDecoration: match ? "underline" : "none",
           textUnderlineOffset: "8px",
@@ -17,8 +17,7 @@ const CustomLink = ({ children, to, ...props }) => {
         {...props}
       >
         {children}
-      </Link>
-    </div>
+      </Link>  
   );
 };
 

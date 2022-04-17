@@ -14,7 +14,7 @@ import SuccessStories from "./Pages/SuccessStories/SuccessStories";
 function App() {
   return (
     <div>
-      <Header></Header>
+      <Header></Header> 
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
@@ -28,7 +28,7 @@ function App() {
         ></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/about" element={<About></About>}></Route>
-        <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/login" element={<Login></Login>}></Route>npm start
         <Route path="/register" element={<Register></Register>}></Route>
         <Route
           path="/success-stories"
