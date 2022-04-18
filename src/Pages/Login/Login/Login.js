@@ -93,9 +93,9 @@ const Login = () => {
           </Link>
         </p>
         <span
-          onClick={handleReset}
           role="button"
           className="text-warning text-decoration-underline fw-bold"
+          onClick={handleReset}
         >
           Forgot password?
         </span>
