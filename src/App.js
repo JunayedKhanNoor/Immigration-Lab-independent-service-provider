@@ -10,6 +10,7 @@ import RequiredAuth from "./Pages/RequiredAuth/RequiredAuth";
 import Header from "./Pages/Shared/Header/Header";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
 import SuccessStories from "./Pages/SuccessStories/SuccessStories";
+import Footer from "./Pages/Shared/Footer/Footer"
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         ></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>    
     </div>
   );
 }

@@ -46,7 +46,7 @@ const Register = () => {
   }
  
   return (
-    <div className="p-3" style={{ maxWidth: "600px", margin: "40px auto" }}>
+    <div className="p-3" style={{ maxWidth: "600px", margin: "40px auto",marginBottom:'200px'  }}>
       <h1 style={{ color: "#30475E" }} className="text-center my-2 fw-bold p-2">
         Please register
       </h1>

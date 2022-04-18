@@ -51,7 +51,7 @@ const Login = () => {
     return <Loading></Loading>;
   }
   return (
-    <div className="p-3" style={{ maxWidth: "600px", margin: "40px auto" }}>
+    <div className="p-3" style={{ maxWidth: "600px", margin: "40px auto",marginBottom:'300px' }}>
       <h1 style={{ color: "#30475E" }} className="text-center my-2 fw-bold p-2">
         Please Login
       </h1>
