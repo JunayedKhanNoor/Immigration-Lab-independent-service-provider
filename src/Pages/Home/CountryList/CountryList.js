@@ -6,6 +6,7 @@ import canada from '../../../Images/countries/canada.jpg'
 import chaina from '../../../Images/countries/chaina.jpg'
 import germany from '../../../Images/countries/germany.jpg'
 import singapore from '../../../Images/countries/singapore.jpg'
+import bgImage from '../../../Images/Banner/background.jpg'
 import './Country.css'
 
 const CountryList = () => {
@@ -22,7 +23,7 @@ const CountryList = () => {
           <Card className="country-card">
             <Card.Img variant="top" src={usa} />
             <Card.Body>
-              <Card.Title style={{background:'#FFC947'}} className="text-center fw-bold fs-1 shadow p-1">Usa</Card.Title>
+              <Card.Title style={{background:'#FFC947',fontFamily: "monospace"}} className="text-center fw-bold fs-1 shadow p-1 c-title">Usa</Card.Title>
             </Card.Body>
           </Card>
         </Col>
@@ -30,7 +31,7 @@ const CountryList = () => {
           <Card className="country-card">
             <Card.Img variant="top" src={canada} />
             <Card.Body>
-              <Card.Title className="text-center fw-bold fs-1 shadow p-1">Canada</Card.Title>
+              <Card.Title style={{fontFamily: "monospace"}} className="text-center fw-bold fs-1 shadow p-1 c-title">Canada</Card.Title>
             </Card.Body>
           </Card>
         </Col>
@@ -38,7 +39,7 @@ const CountryList = () => {
           <Card className="country-card">
             <Card.Img variant="top" src={australia} />
             <Card.Body>
-              <Card.Title style={{background:'#FFC947'}} className="text-center fw-bold fs-1 shadow p-1">Australia</Card.Title>
+              <Card.Title style={{background:'#FFC947',fontFamily: "monospace"}} className="text-center fw-bold fs-1 shadow p-1 c-title">Australia</Card.Title>
             </Card.Body>
           </Card>
         </Col>
@@ -46,7 +47,7 @@ const CountryList = () => {
           <Card className="country-card">
             <Card.Img variant="top" src={chaina} />
             <Card.Body>
-              <Card.Title style={{background:'#FFC947'}} className="text-center fw-bold fs-1 shadow p-1">China</Card.Title>
+              <Card.Title style={{background:'#FFC947',fontFamily: "monospace"}} className="text-center fw-bold fs-1 shadow p-1 c-title">China</Card.Title>
             </Card.Body>
           </Card>
         </Col>
@@ -54,7 +55,7 @@ const CountryList = () => {
           <Card className="country-card">
             <Card.Img variant="top" src={singapore} />
             <Card.Body>
-              <Card.Title  className="text-center fw-bold fs-1 shadow p-1">Singapore</Card.Title>
+              <Card.Title style={{fontFamily: "monospace"}}  className="text-center fw-bold fs-1 shadow p-1 c-title">Singapore</Card.Title>
             </Card.Body>
           </Card>
         </Col>
@@ -62,11 +63,15 @@ const CountryList = () => {
           <Card className="country-card">
             <Card.Img variant="top" src={germany} />
             <Card.Body>
-              <Card.Title style={{background:'#FFC947'}} className="text-center fw-bold fs-1 shadow p-1">Germany</Card.Title>
+              <Card.Title style={{background:'#FFC947',fontFamily: "monospace"}} className="text-center fw-bold fs-1 shadow p-1 c-title">Germany</Card.Title>
             </Card.Body>
           </Card>
         </Col>
       </Row>
+      <div className="bannerImage">
+        {/* <img className="img-fluid" src={bgImage} alt="" /> */}
+      </div>
+      <h1 style={{fontFamily: "monospace"}}  className="text-center fw-bold">Happy Traveling</h1>
     </div>
   );
 };

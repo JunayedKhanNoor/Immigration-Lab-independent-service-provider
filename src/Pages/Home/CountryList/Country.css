@@ -15,3 +15,14 @@ box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0p
     #F5F5F5 100%
   );
 }
+.c-title{
+  border-radius:50px;
+}
+.bannerImage{
+  background-image:url('../../../Images/Banner/background.jpg');
+  height: 600px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
