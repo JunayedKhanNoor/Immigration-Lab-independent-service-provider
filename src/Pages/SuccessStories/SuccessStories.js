@@ -19,7 +19,7 @@ const SuccessStories = () => {
           display: "block",
           marginLeft: "auto",
           marginRight: "auto",
-          maxWidth: "600px",
+          maxWidth:'50%',
         }}
         src={success}
         alt=""
@@ -38,17 +38,17 @@ const SuccessStories = () => {
         style={{ background: "#143F6B", color: "#F55353" }}
         className="d-md-flex py-5 justify-content-around align-items-center"
       >
-        <div>
+        <div className="ms-5">
           <h1>
             <animated.div>{number.to((n) => n.toFixed(2))}</animated.div>
           </h1>
           <h3>Year of Experience</h3>
         </div>
-        <div>
+        <div className="ms-5">
           <h1>1000+</h1>
           <h3>Happy Clients</h3>
         </div>
-        <div>
+        <div className="ms-5">
           <h1>90%</h1>
           <h3>Visa Success Rate</h3>
         </div>
