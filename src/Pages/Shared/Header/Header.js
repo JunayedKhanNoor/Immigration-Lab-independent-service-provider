@@ -41,7 +41,7 @@ const Header = () => {
             <CustomLink className="text-light fs-6 fw-bold mx-2 " to='/about'>About</CustomLink>
             {
               user?
-              <CustomLink onClick={logOut} to='/' className="text-light fs-6 fw-bold mx-2 ">Sign Out</CustomLink>
+              <span role="button" onClick={logOut}  className="text-light fs-6 fw-bold mx-2 ">Sign Out</span>
               :
               <CustomLink className="fs-6 fw-bold mx-2" to='/login'>Login</CustomLink>
             } 
